@@ -1,0 +1,423 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root{
+    --red: #ff8484;
+}
+
+*{
+    font-family: "Archivo Black", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--red);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background: #fff;
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem 5%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ff8484;
+    text-decoration: none;
+}
+
+header .logo img{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ff8484;
+    text-decoration: none;
+}
+
+
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #616161;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: var(--red)
+}
+
+#menu-bar{
+    font-size: 3rem;
+    color: #616161;
+    cursor: pointer;
+    border: .1rem solid #616161;
+    border-radius: .3rem;
+    padding: .5rem 1.5rem;
+    display: none;
+}
+
+
+
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+.home h1{
+    font-size: 4rem;
+}
+.home p{
+    font-size: 2rem;
+}
+
+
+.orderbtn{
+    font-size: 36px;
+    margin-top: 3rem;
+    text-align: center;
+    align-content: center;
+    background-color: #ff8484;
+    width: 200px;
+    height: 70px;
+    text-decoration: none;
+}
+
+.orderbtn a{
+    color: #fff;
+}
+
+.orderbtn:hover{
+    font-size: 36px;
+    color: #fff;
+    margin-top: 3rem;
+    text-align: center;
+    align-content: center;
+    background-color: #bd5e5e;
+    width: 200px;
+    height: 70px;
+    text-decoration: none;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.home .images{
+    flex: 1 1 40rem;
+}
+
+.home .images img{
+    width: 90%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+.speciality{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: url(https://www.eatthis.com/wp-content/uploads/sites/4/2019/04/fast-food-combo-value-meal.jpg?quality=82&strip=1) no-repeat right center/cover;
+}
+
+.speciality .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.speciality h1{
+    font-size: 6rem;
+    color: #fff;
+}
+.speciality p{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.deepbtn{
+    font-size: 36px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    background-color: #ff8484;
+    width: 200px;
+    height: 70px;
+    text-decoration: none;
+}
+
+.deepbtn a{
+    color: #fff;
+}
+
+.deepbtn:hover{
+    font-size: 36px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    background-color: #bd5e5e;
+    width: 200px;
+    height: 70px;
+    text-decoration: none;
+}
+
+.meals{
+    text-align: center;
+    display: block;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+.meals .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.meals .content h1{
+    font-size: 8rem;
+    color: #000000;
+}
+.meals .content p{
+    font-size: 3rem;
+    color: #000000;
+}
+
+.meals .cuisine{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    padding: 2rem 9%;
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.meals .cuisine h1{
+    font-size: 6rem;
+    color: #000000;
+}
+.meals .cuisine p{
+    font-size: 2rem;
+    color: #000000;
+}
+
+.meals .images{
+    flex: 1 1 40rem;
+}
+
+.meals .images img{
+    width: 90%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+.order{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.order .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.order h1{
+    font-size: 6rem;
+    color: #000000;
+}
+.order p{
+    font-size: 3rem;
+    color: #000000;
+}
+
+.order .images{
+    flex: 1 1 40rem;
+}
+
+.order .images img{
+    width: 90%;
+    padding: 1rem;
+    animation: float 3s linear infinite;
+}
+
+.order .form{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    padding: 2rem 9%;
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+    background-color: #ff8484;
+    padding-bottom: 100px;
+}
+
+form{
+    width: 700px;
+    margin: auto;
+}
+.order .form .content{
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.form p{
+    font-size: 24px;
+}
+
+input[type="name"],
+input[type="text"],
+input[type="time"],
+select,
+textarea{
+    border: 1px solid rgb(255, 215, 234);
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 8px;
+}
+
+textarea{
+    height: 148px;
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"]{
+    width: 24px;
+    height: 24px;
+    vertical-align: baseline;
+    margin-left: 24px;
+    margin-right: 8px;
+}
+
+.submitbtn{
+    color: #fff;
+    font-size: 36px;
+    margin: auto;
+    margin-top: 3rem;
+    text-align: center;
+    align-content: center;
+    background-color: #6c2e2e;
+    width: 200px;
+    height: 70px;
+    text-decoration: none;
+}
+
+.submitbtn a{
+    color: #fff;
+}
+
+.submitbtn:hover{
+    color: #fff;
+    font-size: 36px;
+    margin-top: 3rem;
+    text-align: center;
+    align-content: center;
+    background-color: #431d1d;
+    width: 200px;
+    height: 70px;
+    text-decoration: none;
+}
+
+footer{
+    font-size: 24px;
+    background-color: #794c2d;
+    color: #fff;
+    padding: 14px 10px 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 54%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+        &.active{
+            clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        }
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0, 0, 0, .1);
+        border-left: .5rem solid var(--red);
+        background: #fff;
+    }
+}
+
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+
+    50%{
+        transform: translateY(3rem);
+    }
+}
